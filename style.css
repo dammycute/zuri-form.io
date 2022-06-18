@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    border: none;
+    font-family: poppins;
+}
+
+body{
+    background-image: linear-gradient(hsla(0, 100%, 74%, 0.637), hsla(0, 100%, 74%, 0.637)), url('https://i.ibb.co/KjDYf4B/bg-intro-desktop.png');
+    font-size: 16px;
+}
+
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --blue-dark: hsl(249, 10%, 26%);
+    --blue-gray: hsl(246, 25%, 77%);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.learn{
+    width: 100%;
+    max-width: 500px;
+    color: #fff;
+}
+
+.learn h2{
+    font-size: 2.6rem;
+}
+
+.learn p{
+    line-height: 1.6rem;
+    padding-top: 2rem;
+}
+
+.try p{
+    background-color: var(--blue);
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color:#fff;
+    border-radius: 6px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    filter: drop-shadow(2px 2px 4px rgb(187, 187, 187));
+    border-radius: 7px;
+    
+}
+
+input{
+    border: 1px solid var(--blue-gray);
+    padding: 0.6rem;
+    color: var(--blue-gray);
+    border-radius: 5px;
+    font-weight: 600;
+}
+::placeholder{
+    color: var(--blue-gray);
+}
+
+input:focus{
+    color: var(--blue-dark);
+    border: 1px solid var(--blue-dark);
+}
+
+button{
+    background-color: var(--green);
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    box-shadow: 2px 2px 2px rgb(238, 238, 238);
+    font-weight: 600;
+}
+
+small{
+    color: var(--blue-gray);
+    font-weight: 550;
+}
+
+small span{
+    color: var(--red);
+}
+
+
+@media screen and (max-width: 400px){
+    body{
+        background-image: linear-gradient(hsla(0, 100%, 60%, 0.514), hsla(0, 100%, 74%, 0.637)), url('https://i.ibb.co/MnR16dn/bg-intro-mobile.png');
+        
+        background-size: cover;
+        font-size: 16px;
+    }
+
+    .learn{
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .learn h2{
+        font-size: 1.6rem;
+    }
+}
